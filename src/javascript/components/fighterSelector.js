@@ -7,20 +7,16 @@ import fighterService from '../services/fightersService';
 const fighterDetailsMap = new Map();
 
 export async function getFighterInfo(fighterId) {
-    let fighterInfo = fighterDetailsMap.get(fighterId);
-
-    if (!fighterInfo) {
-        // If fighter info is not in the map, fetch it from the service
-        try {
-            fighterInfo = await fighterService.getFighterDetails(fighterId);
-            fighterDetailsMap.set(fighterId, fighterInfo);
-        } catch (error) {
-            console.error(`Error fetching fighter details for fighter ID ${fighterId}:`, error);
-            // Handle error gracefully
+    // get fighter info from fighterDetailsMap or from service and write it to fighterDetailsMap
+    try {
+        const fighter = await fighterService.getFighterDetails(fighterId);
+        if (!fighterDetailsMap.has(fighterId)) {
+            fighterDetailsMap.set(fighterId, fighter);
         }
+        return fighterDetailsMap.get(fighterId);
+    } catch (error) {
+        throw error;
     }
-
-    return fighterInfo;
 }
 
 function startFight(selectedFighters) {

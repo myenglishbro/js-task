@@ -1,8 +1,7 @@
-// arena.js
-
 import createElement from '../helpers/domHelper';
+import { fight } from './fight';
 import { createFighterImage } from './fighterPreview';
-import { fight } from './fight'; // Import the fight function
+import showWinnerModal from './modal/winner';
 
 function createFighter(fighter, position) {
     const imgElement = createFighterImage(fighter);
@@ -62,28 +61,15 @@ function createArena(selectedFighters) {
     return arena;
 }
 
-function showWinnerModal(winner) {
-    const modal = createElement({
-        tagName: 'div',
-        className: 'winner-modal',
-        content: `<p>${winner.name} is the winner!</p>`
-    });
-
-    document.body.appendChild(modal);
-}
-
-export default async function renderArena(selectedFighters) {
+export default function renderArena(selectedFighters) {
     const root = document.getElementById('root');
     const arena = createArena(selectedFighters);
 
     root.innerHTML = '';
     root.append(arena);
 
-    try {
-        const winner = await fight(...selectedFighters);
-        showWinnerModal(winner);
-    } catch (error) {
-        console.error('Error during the fight:', error);
-        // Handle error gracefully, e.g., show an error message to the user
-    }
+    // todo:
+    // - start the fight
+    // - when fight is finished show winner
+    fight(...selectedFighters).then(winner => showWinnerModal(winner));
 }
