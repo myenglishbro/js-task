@@ -1,8 +1,9 @@
-import createElement from '../helpers/domHelper';
-import renderArena from './arena';
-import versusImg from '../../../resources/versus.png';
-import { createFighterPreview } from './fighterPreview';
+
 import fighterService from '../services/fightersService';
+import { createFighterPreview } from './fighterPreview';
+import createElement from '../helpers/domHelper';
+import versusImg from '../../../resources/versus.png';
+
 
 const fighterDetailsMap = new Map();
 
@@ -56,6 +57,8 @@ function renderSelectedFighters(selectedFighters) {
     fightersPreview.append(firstPreview, versusBlock, secondPreview);
 }
 
+
+
 export function createFightersSelector() {
     let selectedFighters = [];
 
@@ -69,3 +72,15 @@ export function createFightersSelector() {
         renderSelectedFighters(selectedFighters);
     };
 }
+
+
+
+
+
+
+
+
+
+
+
+

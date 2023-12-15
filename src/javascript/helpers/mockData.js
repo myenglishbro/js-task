@@ -1,83 +1,83 @@
 export const fighters = [
     {
         _id: '1',
-        name: 'Ryu',
-        source: 'https://media.giphy.com/media/kdHa4JvihB2gM/giphy.gif'
+        name: 'Greninja',
+        source: 'https://orig00.deviantart.net/706f/f/2016/297/c/1/greninja_3_by_lunadianca-dam1upq.gif'
     },
     {
         _id: '2',
-        name: 'Dhalsim',
-        source: 'https://i.pinimg.com/originals/c0/53/f2/c053f2bce4d2375fee8741acfb35d44d.gif'
+        name: 'Empoleon',
+        source: 'https://38.media.tumblr.com/0461af477744296c6bb6cbbc99e53380/tumblr_n9gdocW21y1s3bc1no1_500.gif'
     },
     {
         _id: '3',
-        name: 'Guile',
-        source: 'https://66.media.tumblr.com/tumblr_lq8g3548bC1qd0wh3o1_400.gif'
+        name: 'Snorlax',
+        source: 'https://25.media.tumblr.com/tumblr_m5zyheRG0l1qj7ct2o1_500.gif'
     },
     {
         _id: '4',
-        name: 'Zangief',
-        source: 'https://media1.giphy.com/media/nlbIvY9K0jfAA/source.gif'
+        name: 'Granbull',
+        source: 'https://24.media.tumblr.com/32c4c124257bde23810ca1ddaef2db7f/tumblr_mo96g7bgFG1s5h198o1_500.gif'
     },
     {
         _id: '5',
-        name: 'Ken',
-        source: 'https://i.pinimg.com/originals/46/4b/36/464b36a7aecd988e3c51e56a823dbedc.gif'
+        name: 'Giratina',
+        source: 'https://25.media.tumblr.com/4a3a7afcb941b7c6ad139b8ef21b984c/tumblr_mldtnr2w2O1s3bc1no1_500.gif'
     },
     {
         _id: '6',
-        name: 'Bison',
-        source: 'http://www.fightersgeneration.com/np5/char/ssf2hd/bison-hdstance.gif'
+        name: 'Arcanine',
+        source: 'https://24.media.tumblr.com/c51cd02791759d7ebe328f55dda56e9e/tumblr_ml5preSYmM1s5h198o1_500.gif'
     }
 ];
 
 export const fightersDetails = [
     {
         _id: '1',
-        name: 'Ryu',
+        name: 'Greninja',
         health: 45,
         attack: 4,
         defense: 3,
-        source: 'https://media.giphy.com/media/kdHa4JvihB2gM/giphy.gif'
+        source: 'https://38.media.tumblr.com/94e9f3d457a2916b99fd0cecc0793039/tumblr_n9e0clg7821s3bc1no1_500.gif'
     },
     {
         _id: '2',
-        name: 'Dhalsim',
+        name: 'Empoleon',
         health: 60,
         attack: 3,
         defense: 1,
-        source: 'https://i.pinimg.com/originals/c0/53/f2/c053f2bce4d2375fee8741acfb35d44d.gif'
+        source: 'https://38.media.tumblr.com/0461af477744296c6bb6cbbc99e53380/tumblr_n9gdocW21y1s3bc1no1_500.gif'
     },
     {
         _id: '3',
-        name: 'Guile',
+        name: 'Snorlax',
         health: 45,
         attack: 4,
         defense: 3,
-        source: 'https://66.media.tumblr.com/tumblr_lq8g3548bC1qd0wh3o1_400.gif'
+        source: 'https://25.media.tumblr.com/tumblr_m5zyheRG0l1qj7ct2o1_500.gif'
     },
     {
         _id: '4',
-        name: 'Zangief',
+        name: 'Granbull',
         health: 60,
         attack: 4,
         defense: 1,
-        source: 'https://media1.giphy.com/media/nlbIvY9K0jfAA/source.gif'
+        source: 'https://24.media.tumblr.com/32c4c124257bde23810ca1ddaef2db7f/tumblr_mo96g7bgFG1s5h198o1_500.gif'
     },
     {
         _id: '5',
-        name: 'Ken',
+        name: 'Giratina',
         health: 45,
         attack: 3,
         defense: 4,
-        source: 'https://i.pinimg.com/originals/46/4b/36/464b36a7aecd988e3c51e56a823dbedc.gif'
+        source: 'https://25.media.tumblr.com/4a3a7afcb941b7c6ad139b8ef21b984c/tumblr_mldtnr2w2O1s3bc1no1_500.gif'
     },
     {
         _id: '6',
-        name: 'Bison',
+        name: 'Arcanine',
         health: 45,
         attack: 5,
         defense: 4,
-        source: 'http://www.fightersgeneration.com/np5/char/ssf2hd/bison-hdstance.gif'
+        source: 'https://24.media.tumblr.com/c51cd02791759d7ebe328f55dda56e9e/tumblr_ml5preSYmM1s5h198o1_500.gif'
     }
 ];
