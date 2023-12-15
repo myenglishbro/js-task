@@ -1,5 +1,8 @@
-@import 'fighters.css';
 @import 'arena.css';
+@import 'fighters.css';
+@import 'fighterPreview.css';
+@import 'previewContainer.css';
+@import 'modal.css';
 
 html,
 body {
